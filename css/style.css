@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+}
+canvas{
+  width: 640pt; /*1024*/
+  height: 480pt; /*768*/
+  border: 1px solid lightgrey;
+}
+.head_pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: tahoma;
+  font-size: 50px;
+}
+.head_story {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: tahoma;
+  font-size: 30px;
+}
+.head_pic ::after {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  bottom: -25px;
+  
+  display: block;
+  content: 'Pic';
+  transform: scaleY(-0.4);
+  opacity: .3;
+}
+
+.upload, .reset, .gray, .red, .rgb, .rainbow,.blur {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
