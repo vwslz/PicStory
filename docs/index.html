@@ -22,63 +22,63 @@
 	</style>
 	
 	<body class="w3-black">
-	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-		<a class="w3-bar-item w3-padding-large w3-black">
-			<div class = "head_pic">
-				<b>Pic</b>
+		<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+			<a class="w3-bar-item w3-padding-large w3-black">
+				<div class = "head_pic">
+					<b>Pic</b>
+				</div>
+				<div class = "head_story">
+					<b>Story</b>
+				</div>
+			</a>
+			<a class="w3-bar-item w3-button w3-padding-large w3-black">
+				<input type="file" id="img" class="upload" accept="images/*" multiple="false"  onchange="upload()" />
+			<label for="img"><i class="fa fa-upload w3-xxlarge"></i></label>
+				<label for="img"><p>Choose Your Pic</p></label>
+			</a>  
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-reset" class="reset" onclick=doReset()>
+				<label for="b-reset"><i class="fa fa-backward w3-xxlarge"></i></label>
+				<label for="b-reset"><p>Reset</p></i></label>
+			</a>
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-gray" class="gray" onclick=makeGray()>
+				<label for="b-gray"><i class="fa fa-adjust w3-xxlarge"></i></label>
+				<label for="b-gray"><p>Grayscale</p></i></label>
+			</a>
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-red" class="red" onclick=makeRed()>
+				<label for="b-red"><i class="fa fa-heart w3-xxlarge"></i></label>
+				<label for="b-red"><p>Red</p></label>
+			</a>
+
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-rgb" class="rgb" onclick=makeRGB()>
+				<label for="b-rgb"><i class="fa fa-navicon w3-xxlarge"></i></label>
+				<label for="b-rgb"><p>Red, Green, and Blue</p></label>
+			</a>
+
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-rainbow" class="rainbow" onclick=makeRainbow()>
+				<label for="b-rainbow"><i class="w3-xxlarge">&#127752</i></label>
+				<label for="b-rainbow"><p>Rainbow</p></label>
+			</a>
+
+			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<input type="button" id="b-blur" class="blur" onclick=makeBlur()>
+				<label for="b-blur"><i class="fa fa-fire w3-xxlarge"></i></label>
+				<label for="b-blur"><p>Blur</p></label>
+			</a>
+		</nav>
+
+		<div class="w3-padding-large" id="main">
+			<div class="w3-container w3-padding-32 w3-center w3-black" id="can">
+				<canvas id = "pic">
+				</canvas>
 			</div>
-			<div class = "head_story">
-				<b>Story</b>
-			</div>
-		</a>
-		<a class="w3-padding-large w3-black">
-			<input type="file" id="img" class="upload" accept="images/*" multiple="false"  onchange="upload()" />
-		<label for="img"><i class="fa fa-upload w3-xxlarge"></i></label>
-			<label for="img"><p>Choose Your Pic</p></label>
-		</a>  
-		<a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-reset" class="reset" onclick=doReset()>
-			<label for="b-reset"><i class="fa fa-backward w3-xxlarge"></i></label>
-			<label for="b-reset"><p>Reset</p></i></label>
-		</a>
-        <a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-gray" class="gray" onclick=makeGray()>
-			<label for="b-gray"><i class="fa fa-adjust w3-xxlarge"></i></label>
-			<label for="b-gray"><p>Grayscale</p></i></label>
-		</a>
-		<a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-red" class="red" onclick=makeRed()>
-			<label for="b-red"><i class="fa fa-heart w3-xxlarge"></i></label>
-			<label for="b-red"><p>Red</p></label>
-		</a>
-
-		<a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-rgb" class="rgb" onclick=makeRGB()>
-			<label for="b-rgb"><i class="fa fa-navicon w3-xxlarge"></i></label>
-			<label for="b-rgb"><p>Red, Green, and Blue</p></label>
-		</a>
-
-		<a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-rainbow" class="rainbow" onclick=makeRainbow()>
-			<label for="b-rainbow"><i class="w3-xxlarge">&#127752</i></label>
-			<label for="b-rainbow"><p>Rainbow</p></label>
-		</a>
-
-		<a class="w3-padding-large w3-hover-black">
-			<input type="button" id="b-blur" class="blur" onclick=makeBlur()>
-			<label for="b-blur"><i class="fa fa-fire w3-xxlarge"></i></label>
-			<label for="b-blur"><p>Blur</p></label>
-		</a>
-	</nav>
-
-	<div class="w3-padding-large" id="main">
-		<div class="w3-container w3-padding-32 w3-center w3-black" id="can">
-			<canvas id = "pic">
-			</canvas>
 		</div>
-	</div>
-	  
-	<script src="js/index.js"></script>
+
+		<script src="js/index.js"></script>
 
 	</body>
 </html>
