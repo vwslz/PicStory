@@ -2,8 +2,8 @@ body {
   background-color: black;
 }
 canvas{
-  width: 640pt; /*1024*/
-  height: 480pt; /*768*/
+  width: 1024pt; /*1024*/
+  height: 768pt; /*768*/
   border: 1px solid lightgrey;
 }
 .head_pic {
