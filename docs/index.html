@@ -14,9 +14,9 @@
 		body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 		.w3-row-padding img {margin-bottom: 12px}
 		/* Set the width of the sidebar to 120px */
-		.w3-sidebar {width: 120px;background: #222;}
+		.w3-sidebar {width: 200px;background: #222;}
 		/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-		#main {margin-left: 120px}
+		#main {margin-left: 200px}
 		/* Remove margins from "page content" on small screens */
 		@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 	</style>
@@ -33,10 +33,10 @@
 			</a>
 			<a class="w3-bar-item w3-button w3-padding-large w3-black">
 				<input type="file" id="img" class="upload" accept="images/*" multiple="false"  onchange="upload()" />
-			<label for="img"><i class="fa fa-upload w3-xxlarge"></i></label>
+				<label for="img"><i class="fa fa-upload w3-xxlarge"></i></label>
 				<label for="img"><p>Choose Your Pic</p></label>
 			</a>  
-			<a class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<a class="w3-bar-item w3-button w3-padding-large w3-black">
 				<input type="button" id="b-reset" class="reset" onclick=doReset()>
 				<label for="b-reset"><i class="fa fa-backward w3-xxlarge"></i></label>
 				<label for="b-reset"><p>Reset</p></i></label>
